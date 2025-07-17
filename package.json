@@ -1,0 +1,24 @@
+{
+    "$scima": "https://json.schemastore.org/package",
+    "name": "@sa-gong/react-image",
+    "version": "0.1.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "lint": "eslint '**/*.{js,jsx,ts,tsx}'",
+        "lint:fix": "eslint '**/*.{js,jsx,ts,tsx}' --fix",
+        "md": "markdownlint '*.md'",
+        "md:fix": "markdownlint --fix '*.md'"
+    },
+    "keywords": [],
+    "author": "sagong-oh",
+    "license": "MIT",
+    "packageManager": "pnpm@10.12.4",
+    "devDependencies": {
+        "@naverpay/editorconfig": "^0.0.4",
+        "@naverpay/eslint-config": "^2.3.0",
+        "@naverpay/markdown-lint": "^0.0.3",
+        "@naverpay/prettier-config": "^1.0.1"
+    }
+}
