@@ -2,6 +2,9 @@
     "$scima": "https://json.schemastore.org/package",
     "name": "@sa-gong/react-image",
     "version": "0.0.1",
+    "publishConfig": {
+        "access": "public"
+    },
     "description": "A comprehensive image utility kit for Next.js, and React. This package is created for learning purposes. Caution is advised when using in production.",
     "main": "./dist/cjs/index.js",
     "module": "./dist/esm/index.js",
