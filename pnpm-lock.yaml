@@ -26,7 +26,7 @@ importers:
         version: 0.0.4
       '@naverpay/eslint-config':
         specifier: ^1.0.7
-        version: 1.0.8(79170d2aa903e53e2648d0cd4bb8b77b)
+        version: 1.0.8(5659bfa143072dd692c29c848245d7c9)
       '@naverpay/markdown-lint':
         specifier: ^0.0.3
         version: 0.0.3
@@ -1699,8 +1699,8 @@ packages:
       eslint-plugin-jsdoc: '>=22.1.0'
       eslint-plugin-node: '>=11.1.0'
 
-  eslint-config-prettier@9.1.0:
-    resolution: {integrity: sha512-NSWl5BFQWEPi1j4TjVNItzYV7dZXZ+wP6I6ZhrBGpChQhZRUaElihE9uRRkcbRnNb76UMKDF3r+WTmNcGPKsqw==}
+  eslint-config-prettier@9.1.1:
+    resolution: {integrity: sha512-jeeI5lD4PrC1NPaugxD+JcFvelVATpVMRyK7MoW/QPLlwDjvZoOwq39SDRdiKzYIOjPG6nxOeXRHk3cFYj/psg==}
     hasBin: true
     peerDependencies:
       eslint: '>=7.0.0'
@@ -4050,7 +4050,7 @@ snapshots:
 
   '@naverpay/editorconfig@0.0.4': {}
 
-  '@naverpay/eslint-config@1.0.8(79170d2aa903e53e2648d0cd4bb8b77b)':
+  '@naverpay/eslint-config@1.0.8(5659bfa143072dd692c29c848245d7c9)':
     dependencies:
       '@babel/core': 7.28.0
       '@babel/eslint-parser': 7.28.0(@babel/core@7.28.0)(eslint@8.57.1)
@@ -4062,7 +4062,7 @@ snapshots:
       '@typescript-eslint/parser': 8.37.0(eslint@8.57.1)(typescript@5.8.3)
       eslint: 8.57.1
       eslint-config-eslint: 7.0.0(eslint-plugin-jsdoc@51.4.1(eslint@8.57.1))(eslint-plugin-node@11.1.0(eslint@8.57.1))
-      eslint-config-prettier: 9.1.0(eslint@8.57.1)
+      eslint-config-prettier: 9.1.1(eslint@8.57.1)
       eslint-config-standard: 17.1.0(eslint-plugin-import@2.26.0(@typescript-eslint/parser@8.37.0(eslint@8.57.1)(typescript@5.8.3))(eslint@8.57.1))(eslint-plugin-n@16.6.2(eslint@8.57.1))(eslint-plugin-promise@6.6.0(eslint@8.57.1))(eslint@8.57.1)
       eslint-plugin-import: 2.26.0(@typescript-eslint/parser@8.37.0(eslint@8.57.1)(typescript@5.8.3))(eslint@8.57.1)
       eslint-plugin-jsx-a11y: 6.10.2(eslint@8.57.1)
@@ -5180,7 +5180,7 @@ snapshots:
       eslint-plugin-jsdoc: 51.4.1(eslint@8.57.1)
       eslint-plugin-node: 11.1.0(eslint@8.57.1)
 
-  eslint-config-prettier@9.1.0(eslint@8.57.1):
+  eslint-config-prettier@9.1.1(eslint@8.57.1):
     dependencies:
       eslint: 8.57.1
 
