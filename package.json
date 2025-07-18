@@ -51,6 +51,9 @@
             }
         }
     },
+    "files": [
+        "dist"
+    ],
     "scripts": {
         "prepare": "lefthook install -f",
         "build": "pnpm run clean && vite build --config vite.config.mts && pnpm run build:dts",
@@ -75,7 +78,6 @@
     ],
     "author": "sagong-oh",
     "license": "MIT",
-    "packageManager": "pnpm@10.12.4",
     "dependencies": {
         "core-js-pure": "^3.38.1"
     },
@@ -114,5 +116,14 @@
         "next": {
             "optional": true
         }
+    },
+    "pnpm": {
+        "overrides": {
+            "prettier": "^3.3.3"
+        }
+    },
+    "packageManager": "pnpm@9.7.0",
+    "engines": {
+        "node": ">=14.0.0"
     }
 }
