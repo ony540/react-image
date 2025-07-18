@@ -1,9 +1,53 @@
 {
     "$scima": "https://json.schemastore.org/package",
     "name": "@sa-gong/react-image",
-    "version": "0.1.0",
-    "description": "",
-    "main": "index.js",
+    "version": "0.0.1",
+    "description": "A comprehensive image utility kit for Next.js, and React. This package is created for learning purposes. Caution is advised when using in production.",
+    "main": "./dist/cjs/index.js",
+    "module": "./dist/esm/index.js",
+    "types": "./dist/cjs/index.d.ts",
+    "exports": {
+        ".": {
+            "import": {
+                "types": "./dist/esm/index.d.mts",
+                "default": "./dist/esm/index.mjs"
+            },
+            "require": {
+                "types": "./dist/cjs/index.d.ts",
+                "default": "./dist/cjs/index.js"
+            }
+        },
+        "./react": {
+            "import": {
+                "types": "./dist/esm/react.d.mts",
+                "default": "./dist/esm/react.mjs"
+            },
+            "require": {
+                "types": "./dist/cjs/react.d.ts",
+                "default": "./dist/cjs/react.js"
+            }
+        },
+        "./next": {
+            "import": {
+                "types": "./dist/esm/next.d.mts",
+                "default": "./dist/esm/next.mjs"
+            },
+            "require": {
+                "types": "./dist/cjs/next.d.ts",
+                "default": "./dist/cjs/next.js"
+            }
+        },
+        "./utils": {
+            "import": {
+                "types": "./dist/esm/utils.d.mts",
+                "default": "./dist/esm/utils.mjs"
+            },
+            "require": {
+                "types": "./dist/cjs/utils.d.ts",
+                "default": "./dist/cjs/utils.js"
+            }
+        }
+    },
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
         "lint": "eslint '**/*.{js,jsx,ts,tsx}'",
@@ -14,7 +58,13 @@
         "clean": "rm -rf dist",
         "build:dts": "tsup --config tsup.config.mts"
     },
-    "keywords": [],
+    "keywords": [
+        "image",
+        "utils",
+        "nextjs",
+        "react",
+        "filter"
+    ],
     "author": "sagong-oh",
     "license": "MIT",
     "packageManager": "pnpm@10.12.4",

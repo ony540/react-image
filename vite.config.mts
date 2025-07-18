@@ -1,6 +1,6 @@
 import {babel} from '@rollup/plugin-babel'
-import react from '@vitejs/plugin-react'
-// import react from '@vitejs/plugin-react-swc'
+// import react from '@vitejs/plugin-react'
+import react from '@vitejs/plugin-react-swc'
 // swc 가 빠르지만 17버전 이상부터 사용가능
 import browserslistToEsbuild from 'browserslist-to-esbuild'
 import preserveDirectives from 'rollup-preserve-directives'
