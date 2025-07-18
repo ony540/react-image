@@ -52,14 +52,19 @@
         }
     },
     "scripts": {
-        "test": "vitest run",
+        "prepare": "lefthook install -f",
+        "build": "pnpm run clean && vite build --config vite.config.mts && pnpm run build:dts",
+        "release": "changeset publish",
+        "build:dts": "tsup --config tsup.config.mts",
+        "clean": "rm -rf dist",
         "lint": "eslint '**/*.{js,jsx,ts,tsx}'",
         "lint:fix": "eslint '**/*.{js,jsx,ts,tsx}' --fix",
+        "prettier": "prettier --check '**/*.{ts,tsx,js,mjs,cjs,jsx,json,yaml,yml}'",
+        "prettier:fix": "prettier --write '**/*.{ts,tsx,js,mjs,cjs,jsx,json,yaml,yml}'",
         "md": "markdownlint '*.md'",
         "md:fix": "markdownlint --fix '*.md'",
-        "build": "pnpm run clean && vite build --config vite.config.mts && pnpm run build:dts",
-        "clean": "rm -rf dist",
-        "build:dts": "tsup --config tsup.config.mts"
+        "test": "vitest run",
+        "changeset-version": "changeset version && pnpm run md:fix"
     },
     "keywords": [
         "image",
