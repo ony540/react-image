@@ -4,6 +4,9 @@ settings:
   autoInstallPeers: true
   excludeLinksFromLockfile: false
 
+overrides:
+  prettier: ^3.3.3
+
 importers:
 
   .:
@@ -26,13 +29,13 @@ importers:
         version: 0.0.4
       '@naverpay/eslint-config':
         specifier: ^1.0.7
-        version: 1.0.8(5659bfa143072dd692c29c848245d7c9)
+        version: 1.0.8(nffpta2ifd6zit7btwaflktmy4)
       '@naverpay/markdown-lint':
         specifier: ^0.0.3
         version: 0.0.3
       '@naverpay/prettier-config':
         specifier: ^1.0.0
-        version: 1.0.1(prettier@2.8.8)
+        version: 1.0.1(prettier@3.6.2)
       '@rollup/plugin-babel':
         specifier: ^6.0.4
         version: 6.0.4(@babel/core@7.28.0)(@types/babel__core@7.20.5)(rollup@4.45.1)
@@ -705,7 +708,7 @@ packages:
   '@naverpay/prettier-config@1.0.1':
     resolution: {integrity: sha512-Wr0e6a91ufu+ijG+xIiCi5ZSKysZ9NqxoaBR1QR3cGe0sbB+oQXcHN3HdZF7bzU7mmlvNTD3/faWTQm4jNftKA==}
     peerDependencies:
-      prettier: ^2.8.8 || ^3.0.0
+      prettier: ^3.3.3
 
   '@next/env@14.2.30':
     resolution: {integrity: sha512-KBiBKrDY6kxTQWGzKjQB7QirL3PiiOkV7KW98leHFjtVRKtft76Ra5qSA/SL75xT44dp6hOcqiiJ6iievLOYug==}
@@ -2750,9 +2753,9 @@ packages:
     resolution: {integrity: sha512-vkcDPrRZo1QZLbn5RLGPpg/WmIQ65qoWWhcGKf/b5eplkkarX0m9z8ppCat4mlOqUsWpyNuYgO3VRyrYHSzX5g==}
     engines: {node: '>= 0.8.0'}
 
-  prettier@2.8.8:
-    resolution: {integrity: sha512-tdN8qQGvNjw4CHbY+XXk0JgCXn9QiF21a55rBe5LJAU+kDyC4WQn4+awm2Xfk2lQMk5fKup9XgzTZtGkjBdP9Q==}
-    engines: {node: '>=10.13.0'}
+  prettier@3.6.2:
+    resolution: {integrity: sha512-I7AIg5boAr5R0FFtJ6rCfD+LFsWHp81dolrFD8S79U9tb8Az2nGrJncnMSnys+bpQJfRUzqs9hnA81OAA3hCuQ==}
+    engines: {node: '>=14'}
     hasBin: true
 
   prop-types@15.8.1:
@@ -3647,7 +3650,7 @@ snapshots:
       fs-extra: 7.0.1
       lodash.startcase: 4.4.0
       outdent: 0.5.0
-      prettier: 2.8.8
+      prettier: 3.6.2
       resolve-from: 5.0.0
       semver: 7.7.2
 
@@ -3775,7 +3778,7 @@ snapshots:
       '@changesets/types': 6.1.0
       fs-extra: 7.0.1
       human-id: 4.1.1
-      prettier: 2.8.8
+      prettier: 3.6.2
 
   '@es-joy/jsdoccomment@0.52.0':
     dependencies:
@@ -4050,7 +4053,7 @@ snapshots:
 
   '@naverpay/editorconfig@0.0.4': {}
 
-  '@naverpay/eslint-config@1.0.8(5659bfa143072dd692c29c848245d7c9)':
+  '@naverpay/eslint-config@1.0.8(nffpta2ifd6zit7btwaflktmy4)':
     dependencies:
       '@babel/core': 7.28.0
       '@babel/eslint-parser': 7.28.0(@babel/core@7.28.0)(eslint@8.57.1)
@@ -4089,9 +4092,9 @@ snapshots:
     dependencies:
       markdownlint-cli2: 0.11.0
 
-  '@naverpay/prettier-config@1.0.1(prettier@2.8.8)':
+  '@naverpay/prettier-config@1.0.1(prettier@3.6.2)':
     dependencies:
-      prettier: 2.8.8
+      prettier: 3.6.2
 
   '@next/env@14.2.30': {}
 
@@ -6296,7 +6299,7 @@ snapshots:
 
   prelude-ls@1.2.1: {}
 
-  prettier@2.8.8: {}
+  prettier@3.6.2: {}
 
   prop-types@15.8.1:
     dependencies:
