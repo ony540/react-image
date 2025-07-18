@@ -9,16 +9,52 @@
         "lint": "eslint '**/*.{js,jsx,ts,tsx}'",
         "lint:fix": "eslint '**/*.{js,jsx,ts,tsx}' --fix",
         "md": "markdownlint '*.md'",
-        "md:fix": "markdownlint --fix '*.md'"
+        "md:fix": "markdownlint --fix '*.md'",
+        "build": "pnpm run clean && vite build --config vite.config.mts && pnpm run build:dts",
+        "clean": "rm -rf dist",
+        "build:dts": "tsup --config tsup.config.mts"
     },
     "keywords": [],
     "author": "sagong-oh",
     "license": "MIT",
     "packageManager": "pnpm@10.12.4",
+    "dependencies": {
+        "core-js-pure": "^3.38.1"
+    },
     "devDependencies": {
+        "@babel/plugin-transform-runtime": "^7.25.4",
+        "@changesets/cli": "^2.27.8",
         "@naverpay/editorconfig": "^0.0.4",
-        "@naverpay/eslint-config": "^2.3.0",
+        "@naverpay/eslint-config": "^1.0.7",
         "@naverpay/markdown-lint": "^0.0.3",
-        "@naverpay/prettier-config": "^1.0.1"
+        "@naverpay/prettier-config": "^1.0.0",
+        "@rollup/plugin-babel": "^6.0.4",
+        "@types/node": "^18.19.43",
+        "@types/react": "18",
+        "@types/react-dom": "18",
+        "@vitejs/plugin-react": "^4.3.4",
+        "@vitejs/plugin-react-swc": "^3.7.2",
+        "browserslist-to-esbuild": "^2.1.1",
+        "lefthook": "^1.7.14",
+        "next": "^14.2.21",
+        "react": "^18.3.1",
+        "rollup": "^4.20.0",
+        "rollup-preserve-directives": "^1.1.1",
+        "tsup": "^8.2.4",
+        "typescript": "^5.5.4",
+        "vite": "^6.0.11",
+        "vite-plugin-dts": "^4.5.4",
+        "vite-tsconfig-paths": "^5.1.3",
+        "vitest": "^2.1.9"
+    },
+    "peerDependencies": {
+        "next": "^13.0.0 || ^14.0.0",
+        "react": "^18.2.0",
+        "react-dom": "^18.2.0"
+    },
+    "peerDependenciesMeta": {
+        "next": {
+            "optional": true
+        }
     }
 }
